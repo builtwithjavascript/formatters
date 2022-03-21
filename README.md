@@ -55,11 +55,11 @@ currencyNumberFormatter().format(12345654321.892345) // outputs: $12,345,654,321
 const currencyNumberFormatter = numberFormatters.currency('EUR')
 currencyNumberFormatter().format(12345654321.892345) // outputs: €12,345,654,321.89
 
-// currency ('USD' with params currencyDisplay[^2], minimumFractionDigits, maximumFractionDigits)
+// currency ('USD' with params currencyDisplay, minimumFractionDigits, maximumFractionDigits)
 const currencyNumberFormatter = numberFormatters.currency('USD', 'code', 1, 3)
 currencyNumberFormatter().format(12345654321.892345) // outputs: USD12,345,654,321.892
-
 ```
+* for more information on currencyDisplay parameter see [^2]*
 
 ### Consume DateTime Formatters:
 
