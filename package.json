@@ -1,6 +1,6 @@
 {
-  "name": "formatters",
-  "version": "0.9.5",
+  "name": "@builtwithjavascript/formatters",
+  "version": "0.9.6",
 	"description": "DateTime and Number formatters based on Intl API",
 	"author": "Damiano Fusco",
 	"license": "MIT",
@@ -42,13 +42,14 @@
   "files": [
     "dist"
   ],
-	"types": "/dist/formatters/index.d.ts",
-  "main": "./dist/formatters.umd.js",
-  "module": "./dist/formatters.es.js",
+	"types": "dist/formatters/index.d.ts",
+  "main": "dist/formatters.umd.js",
+  "module": "dist/formatters.es.js",
   "exports": {
     ".": {
-      "import": "./dist/formatters.es.js",
+      "import": ["./dist/formatters/index.d.ts", "./dist/formatters.es.js"],
       "require": "./dist/formatters.umd.js"
-    }
+    },
+    "./package.json": "./package.json"
   }
 }
