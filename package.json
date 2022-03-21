@@ -1,17 +1,17 @@
 {
   "name": "@builtwithjavascript/formatters",
-  "version": "1.0.1",
+  "version": "1.0.3",
 	"description": "DateTime and Number formatters based on Intl API",
 	"author": "Damiano Fusco",
 	"license": "MIT",
   "repository": {
 		"type": "git",
-		"url": "git+https://github.com/large-scale-apps/formatters.git"
+		"url": "git+https://github.com/builtwithjavascript/formatters.git"
 	},
 	"bugs": {
-		"url": "https://github.com/large-scale-apps/formatters/issues"
+		"url": "https://github.com/builtwithjavascript/formatters/issues"
 	},
-	"homepage": "https://github.com/large-scale-apps/formatters#readme",
+	"homepage": "https://github.com/builtwithjavascript/formatters#readme",
 	"keywords": [
 		"localization, datetime format, number format, formatters, large scale apps"
 	],
