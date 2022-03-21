@@ -1,15 +1,14 @@
-import { useDateTimeFormatters } from "@/formatters";
+import { useDateTimeFormatters } from '@/formatters'
 
-import { LocaleIds } from "../LocaleIds.constants";
+import { LocaleIds } from '../LocaleIds.constants'
 
-describe("dayNames", () => {
-  
-  describe("en-US", () => {
-    const lcid = LocaleIds.enUS;
-    const { dayNames } = useDateTimeFormatters(lcid);
+describe('dayNames', () => {
+  describe('en-US', () => {
+    const lcid = LocaleIds.enUS
+    const { dayNames } = useDateTimeFormatters(lcid)
 
     it(`dayNames`, () => {
-      const result = dayNames();
+      const result = dayNames()
       const expected = [
         { id: 0, name: 'Sunday' },
         { id: 1, name: 'Monday' },
@@ -21,19 +20,19 @@ describe("dayNames", () => {
       ]
       console.log('dayNames result', result)
       expected.forEach((expectedItem) => {
-        const resultItem = result.find(o => o.id === expectedItem.id)
+        const resultItem = result.find((o) => o.id === expectedItem.id)
         expect(resultItem).not.toBeUndefined
         expect(resultItem?.name).toEqual(expectedItem.name)
       })
-    });
-  });
+    })
+  })
 
-  describe("fr-FR", () => {
-    const lcid = LocaleIds.frFR;
-    const { dayNames } = useDateTimeFormatters(lcid);
+  describe('fr-FR', () => {
+    const lcid = LocaleIds.frFR
+    const { dayNames } = useDateTimeFormatters(lcid)
 
     it(`dayNames`, () => {
-      const result = dayNames();
+      const result = dayNames()
       const expected = [
         { id: 0, name: 'dimanche' },
         { id: 1, name: 'lundi' },
@@ -44,11 +43,10 @@ describe("dayNames", () => {
         { id: 6, name: 'samedi' }
       ]
       expected.forEach((expectedItem) => {
-        const resultItem = result.find(o => o.id === expectedItem.id)
+        const resultItem = result.find((o) => o.id === expectedItem.id)
         expect(resultItem).not.toBeUndefined
         expect(resultItem?.name).toEqual(expectedItem.name)
       })
-    });
-  });
-
+    })
+  })
 })

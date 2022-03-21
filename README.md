@@ -3,6 +3,9 @@ DateTime and Number formatters based on Intl API[^1]
 
 [![npm version](https://badge.fury.io/js/@builtwithjavascript%2Fformatters.svg)](https://badge.fury.io/js/@builtwithjavascript%2Fformatters)
 
+## code base
+TypeScript
+
 ## Description
 Contains hooks:
 - useDateTimeFormatters

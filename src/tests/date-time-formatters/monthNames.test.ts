@@ -1,15 +1,14 @@
-import { useDateTimeFormatters } from "@/formatters";
+import { useDateTimeFormatters } from '@/formatters'
 
-import { LocaleIds } from "../LocaleIds.constants";
+import { LocaleIds } from '../LocaleIds.constants'
 
-describe("monthNames", () => {
-  
-  describe("en-US", () => {
-    const lcid = LocaleIds.enUS;
-    const { monthNames } = useDateTimeFormatters(lcid);
+describe('monthNames', () => {
+  describe('en-US', () => {
+    const lcid = LocaleIds.enUS
+    const { monthNames } = useDateTimeFormatters(lcid)
 
     it(`monthNames`, () => {
-      const result = monthNames();
+      const result = monthNames()
       const expected = [
         { id: 0, name: 'January' },
         { id: 1, name: 'February' },
@@ -24,21 +23,24 @@ describe("monthNames", () => {
         { id: 10, name: 'November' },
         { id: 11, name: 'December' }
       ]
-      console.log('monthNames result', result.map((o) => o.name))
+      console.log(
+        'monthNames result',
+        result.map((o) => o.name)
+      )
       expected.forEach((expectedItem) => {
-        const resultItem = result.find(o => o.id === expectedItem.id)
+        const resultItem = result.find((o) => o.id === expectedItem.id)
         expect(resultItem).not.toBeUndefined
         expect(resultItem?.name).toEqual(expectedItem.name)
       })
-    });
-  });
+    })
+  })
 
-  describe("fr-FR", () => {
-    const lcid = LocaleIds.frFR;
-    const { monthNames } = useDateTimeFormatters(lcid);
+  describe('fr-FR', () => {
+    const lcid = LocaleIds.frFR
+    const { monthNames } = useDateTimeFormatters(lcid)
 
     it(`monthNames`, () => {
-      const result = monthNames();
+      const result = monthNames()
       const expected = [
         { id: 0, name: 'janvier' },
         { id: 1, name: 'février' },
@@ -54,11 +56,10 @@ describe("monthNames", () => {
         { id: 11, name: 'décembre' }
       ]
       expected.forEach((expectedItem) => {
-        const resultItem = result.find(o => o.id === expectedItem.id)
+        const resultItem = result.find((o) => o.id === expectedItem.id)
         expect(resultItem).not.toBeUndefined
         expect(resultItem?.name).toEqual(expectedItem.name)
       })
-    });
-  });
-
+    })
+  })
 })
