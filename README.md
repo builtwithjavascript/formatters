@@ -1,5 +1,5 @@
 # @builtwithjavascript/formatters
-DateTime and Number formatters based on Intl API[^ref-1]
+DateTime and Number formatters based on Intl API[^1]
 
 [![npm version](https://badge.fury.io/js/@builtwithjavascript%2Fformatters.svg)](https://badge.fury.io/js/@builtwithjavascript%2Fformatters)
 
@@ -55,7 +55,7 @@ currencyNumberFormatter().format(12345654321.892345) // outputs: $12,345,654,321
 const currencyNumberFormatter = numberFormatters.currency('EUR')
 currencyNumberFormatter().format(12345654321.892345) // outputs: €12,345,654,321.89
 
-// currency ('USD' with params currencyDisplay[^ref-2], minimumFractionDigits, maximumFractionDigits)
+// currency ('USD' with params currencyDisplay[^2], minimumFractionDigits, maximumFractionDigits)
 const currencyNumberFormatter = numberFormatters.currency('USD', 'code', 1, 3)
 currencyNumberFormatter().format(12345654321.892345) // outputs: USD12,345,654,321.892
 
@@ -133,6 +133,6 @@ monthNames()
 
 #### References
 
-[^ref-1] Intl API: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+[^1]: Intl API [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 
-[^ref-2] for 'currencyDisplay' the options are 'symbol', 'narrowSymbol', 'code', 'name' - Reference: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
+[^2]: for 'currencyDisplay' the options are 'symbol', 'narrowSymbol', 'code', 'name' - Reference [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat)
