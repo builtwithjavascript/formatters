@@ -19,6 +19,7 @@
     "dev": "vite",
     "build-types": "tsc src/main.ts --declaration --emitDeclarationOnly --outDir dist",
     "build": "tsc && vite build && npm run build-types",
+    "pub": "npm publish --access public",
     "preview": "vite preview",
     "test": "vitest run",
     "test-watch": "vitest watch",
