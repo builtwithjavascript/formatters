@@ -67,8 +67,8 @@ export const useDateTimeFormatters = (localeId: string) => {
       if (!_cacheDayNames.has(format)) {
         // if not in our cache yet, create it and cache it
         const items: { id: number; name: string }[] = [];
-        for (let i = 1; i < 8; i++) {
-          const date = new Date(1970, 1, i);
+        for (let i = 0; i < 7; i++) {
+          const date = new Date(1970, 2, i+1);
           const name = date.toLocaleString(_lcid, { weekday: format });
           items.push({ id: i, name });
         }
@@ -83,7 +83,7 @@ export const useDateTimeFormatters = (localeId: string) => {
         // if not in our cache yet, create it and cache it
         const items: { id: number; name: string }[] = [];
         for (let i = 0; i < 12; i++) {
-          const date = new Date(1970, i, 1);
+          const date = new Date(1970, (i+1), 0);
           const name = date.toLocaleString(_lcid, { month: format });
           items.push({ id: i, name });
         }

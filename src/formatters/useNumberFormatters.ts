@@ -1,4 +1,4 @@
-const defualtcurrencyDisplay = "symbol"; // 'symbol', 'narrowSymbol', 'code', 'name'
+const defaultcurrencyDisplay = "symbol"; // 'symbol', 'narrowSymbol', 'code', 'name'
 
 export const getNumberFormattersCacheKey = (params: {
   lcid: string;
@@ -18,7 +18,7 @@ export const getNumberFormattersCacheKey = (params: {
   } = params;
   style = (style || "decimal").trim().toLowerCase();
   currency = (currency || "").trim();
-  currencyDisplay = (currencyDisplay || defualtcurrencyDisplay).trim();
+  currencyDisplay = (currencyDisplay || defaultcurrencyDisplay).trim();
 
   let cacheKey = `${lcid}-${style}`;
   if (currency.length > 0) {
@@ -54,7 +54,7 @@ export const useNumberFormatters = (localeId: string) => {
 
     style = (style || "decimal").trim().toLowerCase();
     currency = (currency || "").trim();
-    currencyDisplay = (currencyDisplay || defualtcurrencyDisplay).trim();
+    currencyDisplay = (currencyDisplay || defaultcurrencyDisplay).trim();
 
     let cacheKey = getNumberFormattersCacheKey({
       lcid: _lcid,
