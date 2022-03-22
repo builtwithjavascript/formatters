@@ -2,6 +2,7 @@
 
 const defaultcurrencyDisplay = 'symbol' // 'symbol', 'narrowSymbol', 'code', 'name'
 
+// helper to calculate the cache key for the datetime Intl.NumberFormat instances
 export const getNumberFormattersCacheKey = (params: {
   lcid: string
   style?: string
@@ -26,6 +27,8 @@ export const getNumberFormattersCacheKey = (params: {
   return cacheKey
 }
 
+
+// hook to export the various number formatters utils
 export const useNumberFormatters = (localeId: string) => {
   const _lcid = localeId
   const _cache = new Map<string, Intl.NumberFormat>()

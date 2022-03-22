@@ -5,7 +5,7 @@ export type MonthNameFormatType = 'long' | 'short' | 'narrow' | 'numeric' | '2-d
 
 const defaultDateStyle = 'short' // 'full', 'long', 'medium', 'short'
 
-// helper to calculate the cache key for the datetime Intl.DateTimeFormat instance
+// helper to calculate the cache key for the datetime Intl.DateTimeFormat instances
 export const getDateTimeFormattersCacheKey = (params: { lcid: string; dateStyle?: string; timeStyle?: string }) => {
   let { lcid, dateStyle, timeStyle } = params
   dateStyle = (dateStyle || defaultDateStyle).trim().toLowerCase()
