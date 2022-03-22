@@ -20,5 +20,6 @@
       ]
     }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [ "dist", "coverage", "node_modules", "vite.config.ts" ]
 }

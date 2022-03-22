@@ -1,3 +1,5 @@
+// file: src/formatters/useNumberFormatters.ts
+
 const defaultcurrencyDisplay = 'symbol' // 'symbol', 'narrowSymbol', 'code', 'name'
 
 export const getNumberFormattersCacheKey = (params: {
