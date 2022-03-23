@@ -17,7 +17,7 @@ These are wrappers around Intl API NumberFormat and DateTimeFormat that allow to
 
 ### install:
 ```
-npm isntall --save @builtwithjavascript/formatters
+npm install --save @builtwithjavascript/formatters
 ```
 
 ### Consume Number Formatters:

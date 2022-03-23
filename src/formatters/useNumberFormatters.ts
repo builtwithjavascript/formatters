@@ -27,7 +27,6 @@ export const getNumberFormattersCacheKey = (params: {
   return cacheKey
 }
 
-
 // hook to export the various number formatters utils
 export const useNumberFormatters = (localeId: string) => {
   const _lcid = localeId
