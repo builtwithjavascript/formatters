@@ -134,6 +134,21 @@ monthNames()
 */
 ```
 
+
+### Dev Dependencies
+@types/jest 
+@types/node 
+husky 
+jsdom 
+prettier 
+pretty-quick 
+ts-node 
+typescript 
+vite 
+vitest 
+
+
+
 #### References
 
 [^1]: Intl API [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
