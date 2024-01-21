@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/formatters",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Datetime and Number formatters based on Intl API",
   "author": "Damiano Fusco",
   "license": "MIT",
